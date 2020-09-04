@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked"  >Email</ion-label>
+    <ion-input [(ngModel)]="usuario.email" ngDefaultControl name="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked"   >Password</ion-label>
+    <ion-input [(ngModel)]="usuario.clave" type="password" ngDefaultControl name="clave"></ion-input>
+  </ion-item>
+  <!-- Expand -->
+<ion-button expand="full" (click)="Ingresar()">LogIn</ion-button>
+</ion-content>
